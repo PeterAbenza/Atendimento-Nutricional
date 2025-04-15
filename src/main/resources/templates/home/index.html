@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/home.css">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=National+Park:wght@200..800&family=Special+Gothic&display=swap" rel="stylesheet">
+</head>
+<body class="special-gothic-regular">
+
+<!-- header -->
+<div th:replace="fragmentos/frag :: cabecalho" class="special-gothic-regular"></div>
+
+<!-- Apresentação Basica-->
+<section class="py-5" style="background: linear-gradient(to bottom, #d8eed8, #ffffff);" data-aos="zoom-out">
+  <div class="container" style="padding-top: 10vh">
+    <div class="row align-items-center">
+
+      <!-- Texto -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <span class="badge badge-pill badge-success px-3 py-2 mb-3" style="background-color: #d4f8dc; color: #027a48;">
+          Nutrição Clínica
+        </span>
+        <h1 class="font-weight-bold text-dark mb-4" style="font-size: 2.5rem;">
+          Transforme sua saúde <br> com alimentação consciente
+        </h1>
+        <p class="text-muted mb-4">
+          Olá, sou Henrique, nutricionista especializada em ajudar você a alcançar seus objetivos de saúde através de uma alimentação equilibrada e personalizada.
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="#" class="btn btn-success mr-2 mb-2">Agende uma Consulta</a>
+          <a href="#" class="btn btn-outline-success mb-2">Conheça meus Serviços</a>
+        </div>
+      </div>
+
+      <!-- Imagem -->
+      <div class="col-md-6 text-center">
+        <img src="/img/nutricionista.jpg" alt="Nutricionista" class="img-fluid rounded-lg" style="max-height: 400px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section py-5" id="sobre-mim" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+  <div class="container"  data-aos="fade-up">
+
+    <!-- Linha superior personalizada -->
+    <div style="border-top: 2px solid #dfeeea; width: 100%; margin-bottom: 60px;"></div>
+
+    <h2 class="section-title text-center" style="color: #2f4858; font-size: 40px; padding-bottom: 20px;">
+      Sobre Mim
+    </h2>
+    <p class="lead text-muted px-md-5">
+      Olá! Sou <strong>Henrique</strong>, nutricionista especializado em Nutrição Clínica e comprometido em transformar vidas por meio de hábitos alimentares equilibrados. <br><br>
+      Acredito que a nutrição vai muito além de dietas — ela é um pilar essencial para o bem-estar físico e emocional. Meu trabalho é entender sua individualidade e oferecer <strong>acompanhamento personalizado</strong>, com base na ciência e na empatia. <br><br>
+      Se você busca mais saúde, disposição e qualidade de vida, estou aqui para te guiar nessa jornada com responsabilidade e dedicação.
+    </p>
+  </div>
+</div>
+
+
+<section class="py-5 text-center">
+  <div class="container" id="servicos">
+    <div style="border-top: 2px solid #dfeeea; width: 100%; margin-bottom: 40px;"></div>
+    <h2 class="section-title" data-aos="fade-up">Meus Serviços</h2>
+    <p class="section-subtitle mb-5"  data-aos="fade-up">
+      Ofereço atendimento personalizado para ajudar você a alcançar seus objetivos de saúde através da alimentação.
+    </p>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up"
+           data-aos-duration="600">
+        <div class="card p-4">
+          <div class="icon-circle mx-auto">
+            🍏
+          </div>
+          <h5 class="fw-bold">Nutrição Clínica</h5>
+          <p class="text-muted">Avaliação e acompanhamento nutricional personalizado para melhorar sua saúde e qualidade de vida.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up"
+           data-aos-duration="1000">
+        <div class="card p-4">
+          <div class="icon-circle mx-auto">
+            🏋️
+          </div>
+          <h5 class="fw-bold">Nutrição Esportiva</h5>
+          <p class="text-muted">Planos alimentares específicos para atletas e praticantes de atividade física, visando melhor desempenho.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up"
+           data-aos-duration="2000">
+        <div class="card p-4">
+          <div class="icon-circle mx-auto">
+            💚
+          </div>
+          <h5 class="fw-bold">Emagrecimento Saudável</h5>
+          <p class="text-muted">Estratégias nutricionais para perda de peso de forma saudável e sustentável, sem dietas restritivas.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up"
+           data-aos-duration="3000">
+        <div class="card p-4">
+          <div class="icon-circle mx-auto">
+            🍴
+          </div>
+          <h5 class="fw-bold">Reeducação Alimentar</h5>
+          <p class="text-muted">Desenvolvimento de hábitos alimentares saudáveis para uma relação equilibrada com a comida.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Depoimentos -->
+<section class="py-5" style="background-color: #edf7ed;">
+  <div class="container" id="depoimentos">
+    <h2 class="text-center font-weight-bold mb-2" style="color: #1c1c1c;">Depoimentos</h2>
+    <div class="d-flex justify-content-center mb-4">
+      <div style="width: 100px; height: 4px; background-color: #77dd77; border-radius: 2px;"></div>
+    </div>
+    <p class="text-center text-muted mb-5">Veja o que meus clientes têm a dizer sobre os resultados alcançados.</p>
+
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4" data-aos="flip-up">
+        <div class="card h-100 shadow-sm p-4 border-0 rounded-lg">
+          <div class="mb-3 text-warning">
+            ★★★★★
+          </div>
+          <p class="text-muted">"Como atleta amador, sempre busquei melhorar minha performance. O acompanhamento nutricional do Henrique fez toda a diferença na minha energia e recuperação."</p>
+          <div class="d-flex align-items-center mt-3">
+            <div class="rounded-circle bg-light d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+              <span class="font-weight-bold">LF</span>
+            </div>
+            <div class="ml-3">
+              <div class="font-weight-bold">Lucas Ferreira</div>
+              <small class="text-muted">Corredor de rua</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4" data-aos="flip-up">
+        <div class="card h-100 shadow-sm p-4 border-0 rounded-lg">
+          <div class="mb-3 text-warning">
+            ★★★★★
+          </div>
+          <p class="text-muted">"Sou vegetariana e sempre tive dificuldade em montar refeições balanceadas. Com a ajuda do Henrique, aprendi a me alimentar melhor sem abrir mão dos meus princípios."</p>
+          <div class="d-flex align-items-center mt-3">
+            <div class="rounded-circle bg-light d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+              <span class="font-weight-bold">AC</span>
+            </div>
+            <div class="ml-3">
+              <div class="font-weight-bold">Ana Clara</div>
+              <small class="text-muted">Designer Gráfica</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4" data-aos="flip-up">
+        <div class="card h-100 shadow-sm p-4 border-0 rounded-lg">
+          <div class="mb-3 text-warning">
+            ★★★★★
+          </div>
+          <p class="text-muted">"Sempre tive dificuldades com a alimentação no trabalho. O Henrique adaptou meu plano alimentar à minha rotina corrida e agora me sinto muito mais disposto."</p>
+          <div class="d-flex align-items-center mt-3">
+            <div class="rounded-circle bg-light d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+              <span class="font-weight-bold">RL</span>
+            </div>
+            <div class="ml-3">
+              <div class="font-weight-bold">Rafael Lima</div>
+              <small class="text-muted">Analista de Sistemas</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Localização -->
+<section class="py-5" style="background-color: #edf7ed;" data-aos="zoom-out">
+  <div class="container" style="padding-bottom: 10vh;" id="localizacao">
+    <h2 class="text-center font-weight-bold mb-2" style="color: #1c1c1c;">Localização</h2>
+    <div class="d-flex justify-content-center mb-4">
+      <div style="width: 100px; height: 4px; background-color: #00c853; border-radius: 2px;"></div>
+    </div>
+    <p class="text-center text-muted mb-5">Visite meu consultório para uma consulta presencial ou agende um atendimento online.</p>
+
+    <div class="row align-items-center">
+      <!-- Coluna da Esquerda: Informações -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="mb-4 d-flex">
+          <div class="text-success mr-3" style="font-size: 1.5rem;">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div>
+            <h5 class="font-weight-bold mb-1">Endereço</h5>
+            <p class="mb-0">Av. Paulista, 1000, Sala 301<br>Bela Vista, São Paulo - SP</p>
+          </div>
+        </div>
+
+        <div class="mb-4 d-flex">
+          <div class="text-success mr-3" style="font-size: 1.5rem;">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div>
+            <h5 class="font-weight-bold mb-1">Horário de Atendimento</h5>
+            <p class="mb-0">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+          </div>
+        </div>
+
+        <div class="d-flex">
+          <div class="text-success mr-3" style="font-size: 1.5rem;">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div>
+            <h5 class="font-weight-bold mb-1">Contato</h5>
+            <p class="mb-0">Telefone: (11) 99999-9999<br>Email: Henrique@nutricionista.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna da Direita: Mapa -->
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-4by3 rounded shadow-sm">
+          <iframe
+                  class="embed-responsive-item"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.860869045219!2d-46.65120328502177!3d-23.57607336761044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c816a3f4c9%3A0x85ef438dce973ff7!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1617555544245!5m2!1spt-BR!2sbr"
+                  width="100%" height="100%" style="border:0;" allowfullscreen=""
+                  aria-hidden="false" tabindex="0">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div th:replace="fragmentos/frag :: footer" class="special-gothic-regular" id="contato"></div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

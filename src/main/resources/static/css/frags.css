@@ -1,0 +1,9 @@
+.nav-link:hover {
+    color: #198754 !important; /* verde Bootstrap */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
